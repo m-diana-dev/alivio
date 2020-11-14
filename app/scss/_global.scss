@@ -9,7 +9,7 @@ html{
 a{
     display: inline-block;
     text-decoration: none;
-    color: $text;
+    color: $black;
 }
 ul,
 li{
@@ -29,6 +29,36 @@ p{
     margin: 0 auto;
     padding: 0 15px;
 }
+.container_story{
+    max-width: 1540px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 body{
-
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: $text;
+}
+.btn{
+    padding: 13px 45px;
+    background-color: $main;
+    border-radius: 4px;
+    color: #fff;
+    transition: all .3s;
+    &:hover{
+        background-color: $bg;
+    }
+}
+.title{
+    font-family: 'Georgia', serif;
+    font-weight: 700;
+    color: $main;
+    font-size: 50px;
+}
+.title-mini{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: $black;
 }

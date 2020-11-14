@@ -1,8 +1,327 @@
-html{
-    box-sizing: border-box;
+@import 'vars';
+@import 'global';
+
+//start header
+.header{
+    border-bottom: 1px solid $border;
 }
-*,
-*::before,
-*::after{
-    box-sizing: inherit;
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 85px;
 }
+.header__menu{
+    li{
+        display: inline-block;
+    }
+    li:not(:last-child){
+        margin-right: 60px;
+    }
+}
+.header__menu-link{
+    transition: all .3s;
+    &:hover{
+        color: $main;
+    }
+}
+.header__btn-signin{
+    margin-right: 35px;
+    transition: all .3s;
+    &:hover{
+        color: $main;
+    }
+}
+//end header
+//start banner
+.banner{
+    background-image: url(../images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 170px;
+}
+.banner__inner{
+    min-height: 895px;
+    padding-top: 175px;
+}
+.banner__text{
+    max-width: 505px;
+}
+.banner__title{
+    font-size: 65px;
+    margin-bottom: 30px;
+}
+.banner__description{
+    margin-bottom: 45px;
+}
+//end banner
+//start steps
+.steps{
+    margin-bottom: 50px;
+}
+.steps__top{
+    margin-bottom: 50px;
+}
+.steps__text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.steps__title{
+    max-width: 585px;
+    line-height: 1.5;
+}
+.steps__description{
+    max-width: 670px;
+}
+.steps__items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 1165px;
+}
+.steps__item{
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    max-width: 390px;
+    width: 100%;
+    padding-top: 140px;
+    position: relative;
+}
+.steps__item-write{
+    align-self: flex-end;
+}
+.steps__item-title{
+    font-family: 'Georgia', serif;
+    font-weight: 700;
+    color: $black;
+    font-size: 30px;
+    margin-bottom: 55px;
+    padding-left: 90px;
+}
+.steps__item-number{
+    font-family: 'Georgia', serif;
+    font-weight: 400;
+    color: rgba($color: $main, $alpha: .2);
+    font-size: 150px;
+    position: absolute;
+    left: 0;
+    top: 30px;
+}
+.steps__item-description{
+    margin-bottom: 60px;
+}
+.steps__item-img{
+    max-width: 390px;
+    min-height: 492px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+}
+//end steps
+//start story
+.story{
+    background-color: $bg;
+    padding: 230px 0 175px;
+    margin-bottom: 120px;
+}
+.story__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.story__text{
+    max-width: 580px;
+    width: 100%;
+}
+.story__title{
+    color: #fff;
+    line-height: 1.5;
+    margin-bottom: 35px;
+}
+.story__description{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 55px;
+}
+.story__btn{
+    &:hover{
+        background-color: #fff;
+        color: $main;
+    }
+}
+.video_wrapper{
+    width: 895px;
+    height: 515px;
+    position: relative;
+    background-color: #000;
+    border-radius: 16px;
+}
+.videoIframe{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+.videoPoster{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image:url(../images/video_bg.jpg);
+    background-size: 100%;
+    border: none;
+    text-indent: -999em;
+    overflow: hidden;
+    opacity: 1;
+    border-radius: 16px;
+}
+.videoPoster:hover{
+    cursor: pointer;
+}
+.videoPoster{
+    svg{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        &:hover{
+            path{
+                fill: $main;
+                transition: all .3s;
+            }
+        }
+    }
+}
+.videoWrapperActive .videoPoster {
+    opacity: 0;
+    height: 0;
+    transition-delay: 0s, .8s;
+}
+//end story
+//start product
+.product{
+    margin-bottom: 165px;
+}
+.product__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.product__profile{
+    max-width: 700px;
+    width: 100%;
+    position: relative;
+}
+.product__img{
+    max-width: 640px;
+    min-height: 575px;
+    margin-left: 65px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 18px;
+    }
+}
+.product__profile-description{
+    background-color: #fff;
+    border-radius: 18px;
+    box-shadow: 0px 4px 18px rgba(165, 165, 165, 0.25);
+    padding: 20px 80px 30px;
+    max-width: 295px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+    *{
+        color: $black;
+    }
+}
+.product__profile-customize{
+    color: $black;
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 1px solid $black;
+    padding-bottom: 10px;
+    margin-bottom: 13px;
+}
+.product__profile-img{
+    max-width: 58px;
+    min-height: 58px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
+.product__profile-name{
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.product__profile-content{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Georgia', serif;
+    margin-bottom: 15px;
+}
+.product__profile-list{
+    li{
+        font-size: 11px;
+        margin-bottom: 15px;
+        list-style: disc inside;
+    }
+}
+.product__content{
+    max-width: 585px;
+    width: 100%;
+}
+.product__title{
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.product__description{
+    margin-bottom: 40px;
+}
+//end product
+//start footer
+.footer{
+    background-color: $bg;
+    padding: 95px 0 145px;
+}
+.footer__logo{
+    margin-bottom: 60px;
+    svg{
+        path{
+            fill: #fff;
+        }
+    }
+}
+.footer__menu{
+    li:not(:last-child){
+        margin-bottom: 60px;
+    }
+}
+.footer__menu-link{
+    color: #fff;
+    font-size: 25px;
+    transition: all .3s;
+    &:hover{
+        color: $black;
+    }
+}
+//end footer
