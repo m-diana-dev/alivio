@@ -1,0 +1,322 @@
+@media (max-width: 1500px){
+    .story__title{
+        font-size: 45px;
+        line-height: 1;
+    }
+    .story__description{
+        font-size: 22px;
+    }
+}
+@media (max-width: 1500px){
+    .product__profile-description{
+        left: 40px;
+        bottom: -30px;
+    }
+}
+@media (max-width: 1300px){
+    .header__burger-menu{
+        display: block;
+    }
+    .header__menu-list{
+        display: none;
+        position: absolute;
+        top: 85px;
+        right: 0;
+        background-color: $bg;
+        width: 75%;
+        padding: 20px;
+        text-align: right;
+        li{
+            display: block;
+        }
+        li:not(:last-child){
+            margin-bottom: 15px;
+            margin-right: 0;
+        }
+    }
+    .header__menu-link{
+        color: #fff;
+        width: 100%;
+    }
+    .header__menu{
+        order: 3;
+    }
+    .steps__text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .steps__title{
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .steps__description{
+        max-width: 100%;
+    }
+    .story {
+        padding: 180px 0 150px;
+    }
+    .story__inner{
+        flex-direction: column;
+    }
+    .story__text{
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    .story__video{
+        max-width: 100%;
+    }
+    .video_wrapper{
+        max-width: 100%;
+    }
+    .product__inner{
+        flex-direction: column-reverse;
+    }
+    .product__content{
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+    .product__title{
+        line-height: 1;
+    }
+    .product__profile{
+        margin: 0 auto;
+    }
+}
+@media (max-width: 1160px){
+    .steps__items{
+        align-items: flex-end;
+    }
+    .steps__item-write{
+        align-self: flex-end;
+    }
+    .steps__item{
+        flex-basis: calc(50% - 35px);
+    }
+    .steps__item-img{
+        max-width: 100%;
+        min-height: auto;
+    }
+    .steps__items{
+        justify-content: center;
+    }
+}
+@media (max-width: 1000px){
+    .banner__inner{
+        min-height: 700px;
+        padding-top: 120px;
+    }
+    .banner__title{
+        font-size: 45px;
+        margin-bottom: 15px;
+    }
+    .banner__description{
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 900px){
+    .banner{
+        margin-bottom: 100px;
+    }
+    .title{
+        font-size: 45px;
+    }
+    .steps__title{
+        line-height: 1;
+    }
+    .steps__top{
+        margin-bottom: 20px;
+    }
+    .steps__item-title{
+        font-size: 25px;
+        margin-bottom: 40px;
+        padding-left: 40px;
+    }
+    .steps__item-description{
+        margin-bottom: 40px;
+        font-size: 18px;
+    }
+    .steps__item-number{
+        font-size: 100px;
+        top: 70px;
+    }
+    .footer__menu-link{
+        font-size: 20px;
+    }
+    .footer {
+        padding: 75px 0 115px;
+    }
+    .footer__menu li:not(:last-child) {
+        margin-bottom: 30px;
+    }
+    .footer__logo {
+        margin-bottom: 45px;
+    }
+}
+@media (max-width: 800px){
+    .story{
+        padding: 120px 0 100px;
+    }
+    .story{
+        margin-bottom: 80px;
+    }
+    .product{
+        margin-bottom: 120px;
+    }
+}
+@media (max-width: 700px){
+    .steps__items{
+        margin-left: 0;
+    }
+    .steps__item:not(:last-child){
+        margin-right: 0;
+    }
+    .steps__item{
+        flex-basis: 100%;
+    }
+    .steps__item-title{
+        font-size: 30px;
+        margin-bottom: 55px;
+    }
+    .steps__item-number{
+        font-size: 150px;
+        top: 30px;
+    }
+    .steps__item-description{
+        font-size: 20px;
+    }
+    .story__title{
+        margin-bottom: 25px;
+    }
+    .story__description{
+        margin-bottom: 35px;
+    }
+    .product__profile-description {
+        padding: 20px 40px 20px;
+        bottom: 15px;
+    }
+}
+@media (max-width: 650px){
+    .banner__inner{
+        min-height: 500px;
+        padding-top: 100px;
+    }
+    .banner__title{
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+    .banner__description{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .btn{
+        font-size: 18px;
+    }
+    .header__btn-trial-icon{
+        display: flex;
+    }
+    .header__btn-trial{
+        display: none;
+    }
+    .title{
+        font-size: 40px;
+    }
+    .steps__description{
+        font-size: 18px;
+    }
+    .product__profile-description{
+        padding: 15px 30px 15px;
+        bottom: 60px;
+    }
+    .product__profile-customize{
+        font-size: 18px;
+    }
+    .product__profile-img{
+        width: 100px;
+        height: 100px;
+    }
+    .product__profile-name{
+        font-size: 16px;
+    }
+    .product__profile-content {
+        font-size: 18px;
+    }
+    .product__profile-description{
+        li{
+            font-size: 14px;
+        }
+    }
+    .product__profile-description{
+        padding: 30px 30px 30px;
+    }
+}
+@media (max-width: 650px){
+    .product__img{
+        display: none;
+    }
+    .product__profile-description{
+        position: static;
+        max-width: 100%;
+    }
+}
+@media (max-width: 500px){
+    .title-mini{
+        font-size: 20px;
+    }
+    .title{
+        font-size: 35px;
+    }
+    .steps__description{
+        font-size: 18px;
+    }
+    .steps__item-title {
+        font-size: 25px;
+        margin-bottom: 40px;
+        padding-left: 40px;
+    }
+    .steps__item-description{
+        margin-bottom: 40px;
+        font-size: 18px;
+    }
+    .steps__item-number{
+        font-size: 100px;
+        top: 70px;
+    }
+    .story{
+        padding: 100px 0 90px;
+    }
+    .video_wrapper{
+        height: 300px;
+    }
+    .story__description{
+        font-size: 18px;
+    }
+    .product__description {
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+}
+@media (max-width: 350px){
+    .header__btn-signin {
+        margin-right: 25px;
+        font-size: 18px;
+    }
+    .title{
+        font-size: 28px;
+    }
+    .title-mini{
+        font-size: 18px;
+    }
+    .story__description{
+        margin-bottom: 20px;
+    }
+    .footer__menu-link{
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1301px){
+    .header__menu-list{
+        display: block !important;
+    }
+}

@@ -18,4 +18,8 @@ $(function(){
         // подставляем в src параметр из data
         iframe.attr('src',src);
       }
+
+    $('.header__burger-menu').on('click', function(){
+        $('.header__menu-list').slideToggle();
+    });
   });
