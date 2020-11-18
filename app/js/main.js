@@ -21,5 +21,6 @@ $(function(){
 
     $('.header__burger-menu').on('click', function(){
         $('.header__menu-list').slideToggle();
+        $('.header__burger-menu').toggleClass('active');
     });
   });

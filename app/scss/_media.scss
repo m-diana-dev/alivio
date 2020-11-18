@@ -19,12 +19,15 @@
     }
     .header__menu-list{
         display: none;
-        position: absolute;
-        top: 85px;
+        position: fixed;
+        top: 0;
+        left: 20%;
+        bottom: 0;
         right: 0;
-        background-color: $bg;
-        width: 75%;
-        padding: 20px;
+        background-color: rgba($color: $bg, $alpha: .85);
+        // width: 75%;
+        padding: 50px;
+        padding-top: 100px;
         text-align: right;
         li{
             display: block;

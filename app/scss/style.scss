@@ -4,6 +4,12 @@
 //start header
 .header{
     border-bottom: 1px solid $border;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: #fff;
 }
 .header__inner{
     display: flex;
@@ -48,17 +54,45 @@
     }
 }
 .header__burger-menu{
-    width: 30px;
     cursor: pointer;
     display: none;
+    &::before,
+    &::after{
+        content: '';
+        height: 4px;
+        background-color: $main;
+        border-radius: 40%;
+        width: 30px;  
+        display: block;
+        margin-bottom: 4px;
+        transition: transform .3s;
+    }
+    &::after{
+        margin-bottom: 0
+    }
 }
 .header__burger-menu-line{
     height: 4px;
     background-color: $main;
     border-radius: 40%;
+    width: 30px;
+    margin-bottom: 4px;
+    opacity: 1;
+    transition: opacity 1s;
 }
-.header__burger-menu-line:not(:last-child){
-    margin-bottom: 5px;
+.header__burger-menu.active{
+    .header__burger-menu-line{
+        opacity: 0;
+        transition: opacity 0s;
+    }
+    &::after{
+        transform: translateY(-8px) rotate(135deg);
+        background-color: $black;
+    }
+    &::before{
+        transform: translateY(8px) rotate(-135deg);
+        background-color: $black;
+    }
 }
 //end header
 //start banner
